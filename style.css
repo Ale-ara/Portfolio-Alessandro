@@ -1,0 +1,491 @@
+/* ======== ESTILO GERAL ======== */
+:root {
+    --bg-dark: #111;
+    --bg-light: #181818;
+    --text: #f2f2f2;
+    --accent: #d5d4d4; /* roxo suave */
+    --accent-light: #f2f2f2;
+    --accent-qox: #828282;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: var(--bg-dark);
+    color: var(--text);
+    overflow-x: hidden;
+}
+
+/* ======== HEADER ======== */
+header {
+    width: 100%;
+    padding: 25px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background: rgba(0,0,0,0.2);
+    backdrop-filter: blur(8px);
+}
+
+header a {
+    color: var(--text);
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+header a:hover {
+    color: var(--accent-qoxt);
+}
+
+/* ======== SESSÃO HERO ======== */
+.hero {
+    padding: 150px 8% 80px;
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    align-items: center;
+    gap: 60px;
+}
+
+.hero h1 {
+    font-size: 3.4rem;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    margin-bottom: 25px;
+    font-size: 1.1rem;
+    opacity: 0.85;
+}
+
+.hero button {
+    padding: 14px 32px;
+    background: var(--accent);
+    border: none;
+    border-radius: 12px;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero button:hover {
+    background: var(--accent-qoxt);
+}
+
+.img-main {
+    width: 100%;
+    max-width: 420px;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 0 0 30px rgba(139, 92, 246, 0.35);
+    animation: float 5s ease-in-out infinite;
+}
+
+/* animação leve */
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+/* ======== SOBRE ======== */
+.sobre {
+    padding: 120px 8%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    background: var(--bg-qoxt);
+    margin-top: 80px;
+    border-radius: 40px 40px 0 0;
+}
+
+.sobre h2 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+}
+
+.sobre p {
+    line-height: 1.7;
+    opacity: 0.9;
+}
+
+.sobre-img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 25px rgba(139, 92, 246, 0.3);
+}
+
+
+/* ===================== MEDIA QUERIES ===================== */
+
+/* Tablets */
+@media (max-width: 992px) {
+    .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 2.7rem;
+    }
+
+    .img-main {
+        margin: 0 auto;
+    }
+
+    .sobre {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .sobre-img {
+        margin: 0 auto;
+    }
+}
+
+/* Celulares grandes */
+@media (max-width: 768px) {
+    header {
+        padding: 20px 6%;
+    }
+
+    .hero {
+        padding: 130px 6% 70px;
+    }
+
+    .hero h1 {
+        font-size: 2.3rem;
+    }
+
+    .sobre h2 {
+        font-size: 2.2rem;
+    }
+}
+
+/* Celulares pequenos */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.9rem;
+    }
+
+    .hero p {
+        font-size: 0.95rem;
+    }
+
+    .sobre h2 {
+        font-size: 1.8rem;
+    }
+
+    .sobre p {
+        font-size: 0.95rem;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+/* ======== FOOTER ======== */
+.footer {
+    background: #0d0d0d;
+    padding: 60px 8%;
+    margin-top: 120px;
+    border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+.footer-container {
+    text-align: center;
+}
+
+.footer h3 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    color: var(--accent-qoxt);
+}
+
+.footer p {
+    opacity: 0.8;
+    margin-bottom: 25px;
+}
+
+/* Contato por e-mail */
+.footer-contact {
+    margin-bottom: 25px;
+    font-size: 1rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap; /* quebra para celular se necessário */
+}
+
+.footer-contact a {
+    color: var(--accent-light);
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.footer-contact a:hover {
+    color: var(--accent);
+}
+
+/* Links antigos do footer (caso queira manter) */
+.footer-links {
+    margin-bottom: 25px;
+}
+
+.footer-links a {
+    color: var(--text);
+    margin: 0 12px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: var(--accent-light);
+}
+
+.footer .copy {
+    font-size: 0.85rem;
+    opacity: 0.6;
+}
+
+/* ======== FOOTER MOBILE ======== */
+@media (max-width: 480px) {
+    .footer h3 {
+        font-size: 1.3rem;
+    }
+
+    .footer-links a {
+        display: inline-block;
+        margin: 8px 6px;
+        font-size: 0.95rem;
+    }
+
+    .footer-contact {
+        flex-direction: column;
+        gap: 5px;
+        font-size: 0.95rem;
+    }
+}
+
+/* ======== BOTÃO SAIBA MAIS ======== */
+
+.btn-saiba {
+    display: inline-block;
+    padding: 12px 34px;
+    background: transparent;
+    border: 2px solid var(--accent);
+    border-radius: 14px;
+    color: var(--accent-qox);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.35s ease;
+    letter-spacing: 0.5px;
+}
+
+.btn-saiba:hover {
+    background: var(--accent);
+    color: #fff;
+    box-shadow: 0 0 18px rgba(102, 102, 102, 0.45);
+    transform: translateY(-2px);
+}
+/* Tablet */
+@media (max-width: 768px) {
+    .btn-saiba {
+        padding: 10px 30px;
+        font-size: 0.95rem;
+    }
+}
+
+/* Celulares */
+@media (max-width: 480px) {
+    .btn-saiba {
+        width: 100%;
+        text-align: center;
+        padding: 14px;
+        font-size: 1rem;
+        border-radius: 10px;
+    }
+}
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.6s ease;
+}
+html {
+    scroll-behavior: smooth;
+}
+.redes {
+    padding: 80px 8%;
+    text-align: center;
+    background: var(--bg-dark);
+    color: var(--text);
+}
+
+.redes h2 {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+.redes h2 span {
+    color: #828282; /* cor verde água */
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: var(--bg-light);
+    padding: 30px 20px;
+    border-radius: 20px;
+    width: 220px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+/* Ícones usando cores específicas ou você pode usar SVGs */
+.card-icon.github {
+    background: url('assets/github.svg') no-repeat center center;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 15px;
+}
+
+.card-icon.instagram {
+    background: url('assets/instagram.svg') no-repeat center center;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 15px;
+}
+
+.card-icon.chat {
+    background: url('assets/chat.svg') no-repeat center center;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 15px;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.card p {
+    font-size: 0.95rem;
+    opacity: 0.8;
+}
+
+/* ======== RESPONSIVO ======== */
+@media (max-width: 768px) {
+    .cards-container {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.logo {
+    height: 50px; /* altura ideal para header */
+    width: auto;  /* mantém proporção */
+}
+
+/* ====== PROJETOS ====== */
+
+.projetos {
+    padding: 80px 20px;
+    background: #111; /* fundo escuro elegante */
+    color: #fff;
+}
+
+.titulo-secao {
+    text-align: center;
+    font-size: 2.6rem;
+    margin-bottom: 40px;
+    font-weight: 600;
+    color: var(--executive-color, rgb(25, 55, 102)); /* caso já tenha definido */
+}
+
+.projetos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 35px;
+}
+
+.projeto {
+    background: #181818;
+    border-radius: 14px;
+    overflow: hidden;
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.projeto img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.projeto a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.projeto:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+.descricao {
+    padding: 18px;
+}
+
+.descricao h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.descricao p {
+    font-size: 0.95rem;
+    opacity: .8;
+    line-height: 1.4rem;
+}
