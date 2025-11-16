@@ -369,6 +369,7 @@ html {
     width: 220px;
     transition: 0.3s;
     cursor: pointer;
+    text-align: center;
 }
 
 .card:hover {
@@ -495,4 +496,5 @@ html {
     opacity: .8;
     line-height: 1.4rem;
 }
+
 
