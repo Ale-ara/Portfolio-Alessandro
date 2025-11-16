@@ -349,6 +349,12 @@ html {
     color: #828282; /* cor verde água */
 }
 
+.card-link {
+    text-decoration: none; 
+    color: inherit;     
+    display: block;   
+}
+
 .cards-container {
     display: flex;
     justify-content: center;
@@ -489,3 +495,4 @@ html {
     opacity: .8;
     line-height: 1.4rem;
 }
+
