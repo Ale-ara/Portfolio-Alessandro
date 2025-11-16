@@ -497,4 +497,29 @@ html {
     line-height: 1.4rem;
 }
 
+/* Estilizando a scrollbar para navegadores baseados em Chromium */
+::-webkit-scrollbar {
+    width: 10px; /* largura da barra */
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-dark); /* cor do fundo da barra */
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--accent); /* cor do “polegar” da barra */
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-light); /* cor ao passar o mouse */
+}
+
+/* Para Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--accent) var(--bg-dark);
+}
+
 
