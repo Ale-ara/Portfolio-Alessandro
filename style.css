@@ -19,6 +19,12 @@ body {
     background: var(--bg-dark);
     color: var(--text);
     overflow-x: hidden;
+    ransition: opacity 0.6s ease;
+}
+
+
+body.fade-out {
+    opacity: 0;
 }
 
 /* ======== HEADER ======== */
@@ -521,5 +527,6 @@ html {
     scrollbar-width: thin;
     scrollbar-color: var(--accent) var(--bg-dark);
 }
+
 
 
