@@ -54,6 +54,12 @@ header a:hover {
     color: var(--accent-qoxt);
 }
 
+.projetos {
+    padding: 150px 20px 80px; 
+    background: #111;
+    color: #fff;
+}
+
 /* ======== SESSÃO HERO ======== */
 .hero {
     padding: 150px 8% 80px;
@@ -583,3 +589,4 @@ html {
   color: var(--accent-qox);
   opacity: 0.85;
 }
+
