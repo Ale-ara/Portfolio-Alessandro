@@ -3,131 +3,374 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio</title>
+
+    <title>Alessandro | Desenvolvedor Front-End</title>
+
+    <meta name="description" content="Desenvolvedor Front-End especializado em criar sites profissionais e sistemas modernos.">
+
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="png" href="logo.png">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <link rel="icon" href="logo.png">
+
 </head>
 
 <body>
-    <header>
-       <img src="logo.png" class="logo" alt="Logo">
-        <nav>
-            <a href="index.html" class="active">Início</a>
-            <a href="sobre.html">Sobre</a>
-            <a href="projetos.html">Projetos</a>
-        </nav>
-    </header>
 
-    <section class="hero">
-    <div class="hero-text">
-        <h1>Olá, eu sou Alessandro</h1>
+<!-- HEADER -->
+
+<header class="header">
+
+    <img src="logo.png" class="logo">
+
+    <nav>
+
+        <a href="#" class="active">Início</a>
+        <a href="projetos.html">Projetos</a>
+        <a href="sobre.html">Sobre</a>
+
+        <a href="mailto:araujo.alessandro@outlook.com.br" class="btn-header">
+            Contato
+        </a>
+
+    </nav>
+
+</header>
+
+
+<!-- HERO PROFISSIONAL -->
+
+<section class="hero-profissional reveal">
+
+    <div class="hero-left">
+
+        <span class="badge">
+            Disponível para projetos e oportunidades
+        </span>
+
+        <h1>
+
+            Desenvolvedor Front-End<br>
+            criando <span class="highlight">sites e sistemas profissionais</span>
+
+        </h1>
 
         <p>
-            Atualmente, estou graduando Engenharia de Software e busco oportunidades para aplicar e desenvolver meus conhecimentos em tecnologia, programação e resolução de problemas.
+
+            Especializado em criar interfaces modernas, sistemas integrados e soluções
+            utilizadas em ambiente real por empresas. Foco em performance, design e resultado.
+
         </p>
 
-        <p>
-            Tenho experiência em administração e logística, tendo trabalhado na Sodexo FM como Jovem Aprendiz Administrativo e na Mega Rio como Auxiliar de Logística. Também possuo cursos em Pacote Office Completo e Montagem e Manutenção de Computadores.
-        </p>
 
-        <p>
-            Estou sempre em constante evolução, preparado para agregar valor com responsabilidade, aprendizado rápido e foco em resultados.
-        </p>
+        <div class="hero-buttons">
 
-        <a href="sobre.html" class="btn-saiba">Saiba mais</a>
-    </div>
+            <a href="projetos.html" class="btn-primary">
 
-    <div>
-        <img src="minhafoto.jpg" class="img-main" alt="Minha Foto">
-    </div>
-</section>
+                Ver projetos
 
-<section class="skills">
-  <h2>Habilidades Técnicas</h2>
+            </a>
 
-  <div class="skills-container">
+            <a href="https://wa.me/5521971266237" target="_blank" class="btn-secondary">
 
-    <div class="skill-card">
-      <!-- HTML SVG -->
-      <svg viewBox="0 0 24 24" width="55" height="55" aria-hidden="true">
-        <path fill="#E44D26" d="M1.5 1.5h21L19 20.5 12 23l-7-2.5L1.5 1.5z"/>
-        <path fill="#fff" d="M7.5 9.2h9l-.9 9.8L12 21.2l-3.6-1.2-.9-9.8z"/>
-      </svg>
-      <h3>HTML5</h3>
-      <p>Estruturação e semântica.</p>
-    </div>
+                WhatsApp
 
-    <div class="skill-card">
-      <!-- CSS SVG -->
-      <svg viewBox="0 0 24 24" width="55" height="55" aria-hidden="true">
-        <path fill="#1572B6" d="M1.5 1.5h21l-1.8 20.2L12 23 3.3 21.7 1.5 1.5z"/>
-        <path fill="#fff" d="M7.5 7.5h9l-.9 9.2L12 19.2l-3.6-1.2-.9-9.2z"/>
-      </svg>
-      <h3>CSS3</h3>
-      <p>Layouts com Flex e Grid.</p>
-    </div>
+            </a>
 
-    <div class="skill-card">
-      <!-- JS SVG -->
-      <svg viewBox="0 0 24 24" width="55" height="55" aria-hidden="true">
-        <rect width="24" height="24" rx="4" fill="#F7DF1E"/>
-        <path d="M10 7.5h1.8v8H10zM15 7.5h1.8v8H15z" fill="#000" opacity="0.9"/>
-      </svg>
-      <h3>JavaScript</h3>
-      <p>Interatividade e DOM.</p>
-    </div>
+            <a href="https://github.com/Ale-ara" target="_blank" class="btn-outline">
 
-    <div class="skill-card">
-      <!-- Apps Script / automation SVG (generic) -->
-      <svg viewBox="0 0 24 24" width="55" height="55" aria-hidden="true">
-        <circle cx="12" cy="12" r="10" fill="#34A853"/>
-        <path d="M8 12h8v1H8z" fill="#fff"/>
-      </svg>
-      <h3>Apps Script</h3>
-      <p>Automação de planilhas e formulários.</p>
-    </div>
+                GitHub
 
-    <div class="skill-card">
-      <!-- PC / suporte SVG -->
-      <svg viewBox="0 0 24 24" width="55" height="55" aria-hidden="true">
-        <rect x="3" y="4" width="18" height="12" rx="1.5" fill="#6c757d"/>
-        <rect x="7" y="16" width="10" height="2" fill="#444"/>
-        <rect x="10" y="18.5" width="4" height="1.2" fill="#222"/>
-      </svg>
-      <h3>Suporte Técnico</h3>
-      <p>Montagem, manutenção e troubleshooting.</p>
-    </div>
+            </a>
 
-  </div>
-</section>
-
-    
-    </section>
-
- <footer class="footer">
-    <div class="footer-container">
-        <h3>Alessandro • Portfólio</h3>
-
-        <p>Transformando ideias em tecnologia.</p>
-
-        <div class="footer-contact">
-            <span>Entre em contato comigo:</span>
-            <a href="mailto:araujo.alessandro@outlook.com.br">araujo.alessandro@outlook.com.br</a>
         </div>
 
-        <p class="copy">© 2025 • Todos os direitos reservados.</p>
+
+        <!-- STATUS -->
+
+        <div class="hero-stats">
+
+            <div class="stat">
+
+                <h3 class="counter" data-target="5">0</h3>
+                <p>Projetos reais</p>
+
+            </div>
+
+            <div class="stat">
+
+                <h3 class="counter" data-target="3">0</h3>
+                <p>Sistemas ativos</p>
+
+            </div>
+
+            <div class="stat">
+
+                <h3 class="counter" data-target="100">0</h3>
+                <p>% dedicação</p>
+
+            </div>
+
+        </div>
+
     </div>
+
+
+    <div class="hero-right">
+
+        <img src="minhafoto.jpg" class="hero-image">
+
+    </div>
+
+
+</section>
+
+
+
+<!-- SEÇÃO AUTORIDADE -->
+
+<section class="autoridade reveal">
+
+    <h2>
+
+        Experiência prática com sistemas reais
+
+    </h2>
+
+    <div class="autoridade-grid">
+
+        <div class="autoridade-card">
+
+            <i class="bi bi-code-slash"></i>
+
+            <h3>Sites Profissionais</h3>
+
+            <p>
+                Desenvolvimento de sites modernos e responsivos utilizados por empresas.
+            </p>
+
+        </div>
+
+        <div class="autoridade-card">
+
+            <i class="bi bi-database"></i>
+
+            <h3>Sistemas Integrados</h3>
+
+            <p>
+                Integração com Google Sheets, automação e sistemas personalizados.
+            </p>
+
+        </div>
+
+        <div class="autoridade-card">
+
+            <i class="bi bi-speedometer2"></i>
+
+            <h3>Alta Performance</h3>
+
+            <p>
+                Interfaces rápidas, limpas e focadas em experiência do usuário.
+            </p>
+
+        </div>
+
+        <div class="autoridade-card">
+
+            <i class="bi bi-building"></i>
+
+            <h3>Projetos Reais</h3>
+
+            <p>
+                Sistemas e sites em uso real por empresas e clientes.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- SERVIÇOS -->
+
+<section class="servicos reveal">
+
+    <h2>Serviços</h2>
+
+    <div class="servicos-grid">
+
+        <div class="servico-card">
+
+            <i class="bi bi-window"></i>
+
+            <h3>Sites profissionais</h3>
+
+            <p>
+                Desenvolvimento de sites modernos para empresas.
+            </p>
+
+        </div>
+
+
+        <div class="servico-card">
+
+            <i class="bi bi-layers"></i>
+
+            <h3>Landing pages</h3>
+
+            <p>
+                Páginas otimizadas para conversão e resultados.
+            </p>
+
+        </div>
+
+
+        <div class="servico-card">
+
+            <i class="bi bi-gear"></i>
+
+            <h3>Sistemas personalizados</h3>
+
+            <p>
+                Desenvolvimento de sistemas sob medida.
+            </p>
+
+        </div>
+
+
+        <div class="servico-card">
+
+            <i class="bi bi-arrow-repeat"></i>
+
+            <h3>Automação</h3>
+
+            <p>
+                Integração e automação com Google Sheets.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- CTA FINAL -->
+
+<section class="cta reveal">
+
+    <h2>
+
+        Vamos trabalhar juntos
+
+    </h2>
+
+    <p>
+
+        Disponível para oportunidades profissionais e projetos freelance.
+
+    </p>
+
+    <a href="mailto:araujo.alessandro@outlook.com.br" class="btn-primary">
+
+        Entrar em contato
+
+    </a>
+
+</section>
+
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <h3>Alessandro • Desenvolvedor Front-End</h3>
+
+    <p>
+
+        © 2026 • Todos os direitos reservados
+
+    </p>
+
 </footer>
 
-<head>
-    <script src="script.js" defer></script>
-</head>
+
+
+<!-- SCRIPT -->
+
+<script>
+
+//////////////////////////////////////////////////////
+// CONTADOR ANIMADO
+//////////////////////////////////////////////////////
+
+const counters = document.querySelectorAll(".counter");
+
+counters.forEach(counter => {
+
+    const update = () => {
+
+        const target = +counter.getAttribute("data-target");
+        const count = +counter.innerText;
+
+        const speed = 30;
+
+        const inc = target / speed;
+
+        if(count < target){
+
+            counter.innerText = Math.ceil(count + inc);
+
+            setTimeout(update, 40);
+
+        }else{
+
+            counter.innerText = target;
+
+        }
+
+    };
+
+    update();
+
+});
+
+
+//////////////////////////////////////////////////////
+// ANIMAÇÃO REVEAL
+//////////////////////////////////////////////////////
+
+const reveals = document.querySelectorAll(".reveal");
+
+window.addEventListener("scroll", () => {
+
+    reveals.forEach(element => {
+
+        const windowHeight = window.innerHeight;
+        const elementTop = element.getBoundingClientRect().top;
+
+        if(elementTop < windowHeight - 100){
+
+            element.classList.add("active");
+
+        }
+
+    });
+
+});
+
+</script>
 
 
 </body>
 </html>
-
-
-
-
-
