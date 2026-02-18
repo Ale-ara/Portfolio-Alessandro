@@ -1217,6 +1217,96 @@ html {
 
 }
 
+/* SOBRE HERO */
+
+.sobre-hero {
+
+padding: 180px 8% 120px;
+
+}
+
+.sobre-container {
+
+display: grid;
+
+grid-template-columns: 1fr 400px;
+
+gap: 60px;
+
+align-items: center;
+
+}
+
+
+/* STACK */
+
+.stack {
+
+padding: 120px 8%;
+
+}
+
+.stack-grid {
+
+display: grid;
+
+grid-template-columns: repeat(auto-fit, minmax(140px,1fr));
+
+gap: 20px;
+
+}
+
+.stack-card {
+
+background: var(--bg-light);
+
+padding: 25px;
+
+border-radius: 12px;
+
+text-align: center;
+
+border: 1px solid var(--border);
+
+}
+
+.stack-card i {
+
+font-size: 28px;
+
+color: var(--accent);
+
+margin-bottom: 10px;
+
+}
+
+
+/* TIMELINE */
+
+.experiencia {
+
+padding: 120px 8%;
+
+}
+
+.timeline-item {
+
+margin-bottom: 30px;
+
+border-left: 2px solid var(--accent);
+
+padding-left: 20px;
+
+}
+
+.timeline-item span {
+
+color: var(--text-secondary);
+
+font-size: 0.9rem;
+
+}
+
 
 
 
