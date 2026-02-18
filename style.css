@@ -1188,6 +1188,35 @@ html {
 
 }
 
+.badge-projeto {
+
+    display: inline-block;
+
+    background: rgba(37,99,235,0.15);
+
+    color: var(--accent);
+
+    padding: 4px 12px;
+
+    border-radius: 999px;
+
+    font-size: 0.75rem;
+
+    margin-bottom: 10px;
+
+}
+
+
+.projeto-buttons {
+
+    margin-top: 15px;
+
+    display: flex;
+
+    gap: 10px;
+
+}
+
 
 
 
